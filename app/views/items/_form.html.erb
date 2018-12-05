@@ -1,0 +1,11 @@
+<%= @item.id ? "Edit Item" : "create Item" %>
+
+<%= form_for [@department, @item] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+
+  <%= f.submit %>
+<% end %>

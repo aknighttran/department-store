@@ -1,0 +1,6 @@
+<h1><%= @department.name %></h1>
+
+<%= link_to 'View Items', department_item_path(@department) %>
+<%= link_to 'Add Items', new_department_item_path(@department) %>
+<%= link_to 'Edit Department', edit_department_path(@department) %>
+<%= link_to 'Delete Departemnt', @department, method: :delete %>
