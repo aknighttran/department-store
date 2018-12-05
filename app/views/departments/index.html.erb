@@ -2,6 +2,9 @@
 
 <%= link_to 'Create New Department', new_department_path %>
 
+<br />
+<br />
+
 <% @departments.each do |department| %>
   <%= link_to department.name, department %>
 <% end %>

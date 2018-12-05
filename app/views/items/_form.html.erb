@@ -1,11 +1,18 @@
-<%= @item.id ? "Edit Item" : "create Item" %>
-
+<%= @item.id ? "Edit Item" : "Create Item" %>
+<br />
+<br />
 <%= form_for [@department, @item] do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
+
+  <br />
+  <br />
   
   <%= f.label :price %>
   <%= f.number_field :price %>
+
+  <br />
+  <br />
 
   <%= f.submit %>
 <% end %>

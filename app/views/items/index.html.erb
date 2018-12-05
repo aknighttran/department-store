@@ -2,6 +2,14 @@
 
 <%= link_to 'Create a new item', new_department_item_path(@department) %>
 
+<br />
+<br />
+
+<%= link_to 'Back to Department', department_path(@department) %>
+
+<br />
+<br />
+
 <%= @items.each do |item| %>
   <%= link_to item.name, [@department, item] %>
 

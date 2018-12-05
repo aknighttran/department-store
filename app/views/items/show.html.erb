@@ -1,7 +1,16 @@
 <h1><%= @department.name %> - <%= @item.name %></h1>
 
-<%= @item.price %>
+<h2>Price: $<%= @item.price %></h2>
 
-<%= link_to 'edit item', edit_department_item_path([@department, @item])  %>
-<%= link_to 'Delete item', [@department, @item], method: :delete %>
-<%= link_to 'back to item', department_items_path(@department) %>
+
+<br />
+<br />
+<%= link_to 'Edit Item', edit_department_item_path([@department, @item])  %>
+
+<br />
+<br />
+<%= link_to 'Delete Item', [@department, @item], method: :delete %>
+
+<br />
+<br />
+<%= link_to 'Back to Items', department_items_path(@department) %>
